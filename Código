@@ -1,0 +1,69 @@
+// Bibliotecas
+#include <LiquidCrystal.h>
+
+// Pinos
+LiquidCrystal LCD(12,11,5,4,3,2);
+
+// Variáveis
+int SensorTemperatura=0;
+int SensorUmidade=1;
+int Umidade=0;
+
+
+void setup() 
+{
+	// Inicia o serial
+	Serial.begin(9600);
+  
+	// Inicia o LCD de tamanho 15x2
+	LCD.begin(16,2);
+
+	// Posiciona o cursor em (0,0)
+	LCD.setCursor(0,0);
+  
+	// Imprime a mensagem no LCD
+	LCD.print("  TEMP  |  UMID ");
+  
+	// Posiciona o cursor em (0,1)
+	LCD.setCursor(0,1);
+  
+	// Imprime a mensagem no LCD
+	LCD.print("      C |      %");
+}
+
+
+void loop()
+{
+	// Lê da Tensao do Sensor de Temperatura
+	int SensorTensaoT=analogRead(SensorTemperatura);
+
+	// Converte a Tensao em Graus Celsius
+	float Tensao=SensorTensaoT*5;
+	Tensao/=1024;
+	float Temperatura=(Tensao-0.5)*100;
+
+	// Posiciona o cursor em (0,1)
+	LCD.setCursor(0,1);
+
+   	// Imprime a Temperatura
+   	LCD.print(Temperatura);
+  
+    
+  
+   	// Lê da Tensao do Sensor de Umidade 
+   	int SensorTensaoU=analogRead(SensorUmidade);
+        
+   	// Converte a Tensao em porcentagem
+   	float Umidade=map(SensorTensaoU,0,1023,0,100);
+    
+   	// Posiciona o cursor em (10,1)
+   	LCD.setCursor(10,1);
+     
+	// Imprime a Umidade
+	LCD.print(Umidade);
+
+  
+ 
+ 	// Aguarda 1 segundo
+  	delay(1000);
+}
