@@ -3,4 +3,4 @@ Este código foi escrito como parte do trabalho interdisciplinar proposto pelas 
 
 Visando adquirir mais conhecimento sobre a plataforma TinkerCad para o andamento da disciplina de 'Concepção, Projeto, Implementação e Operação em Engenharia Aeroespacial I' (DEM1106) durante o segundo semestre, algumas melhorias foram feitas (2021-2022).
 
-https://www.tinkercad.com/things/ek9XKRL0p16-sensor-de-movimento
+https://www.tinkercad.com/things/f5geOVfym5D
