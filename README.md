@@ -1,6 +1,7 @@
 # Cansat-TinkerCad
-Este código foi escrito como parte do trabalho interdisciplinar proposto pelas disciplinas de 'Introdução a Engenharia Aeroespacial' (DEM1064) e 'Algoritmos e Programação' (ELC1022) durante o primeiro semestre do curso de Engenharia Aeroespacial da Universidade Federal de Santa Maria (2021).
 
-Visando adquirir mais conhecimento sobre a plataforma TinkerCad para o andamento da disciplina de 'Concepção, Projeto, Implementação e Operação em Engenharia Aeroespacial I' (DEM1106) durante o segundo semestre, algumas melhorias foram feitas (2021-2022).
+This code was written as part of the interdisciplinary project proposed by the courses 'Introduction to Aerospace Engineering' (DEM1064) and 'Algorithms and Programming' (ELC1022) during the first semester of the Aerospace Engineering course at the Federal University of Santa Maria (2021).
+
+Aiming to gain more knowledge about the TinkerCad platform for the progression of the course 'Conception, Design, Implementation, and Operation in Aerospace Engineering I' (DEM1106) during the second semester, some improvements were made (2021-2022).
 
 https://www.tinkercad.com/things/f5geOVfym5D
